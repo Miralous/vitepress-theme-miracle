@@ -1,4 +1,4 @@
-import { Content } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
 import { defineComponent } from 'vue'
 
 import type Frontmatter from '#/utils/frontmatter'
@@ -13,5 +13,5 @@ export namespace HomePageFrontmatter {
 }
 
 export default defineComponent(() => {
-  return () => <Content />
+  return () => <DefaultTheme.Layout />
 })
