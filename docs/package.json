@@ -1,0 +1,24 @@
+{
+  "name": "@miracle/docs",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A miraculously smooth VitePress theme",
+  "keywords": [
+    "blog",
+    "blog-theme",
+    "vitepress",
+    "vitepress-theme"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue-jsx": "catalog:",
+    "vitepress": "catalog:",
+    "vitepress-theme-miracle": "workspace:*"
+  }
+}
