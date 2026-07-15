@@ -1,0 +1,5 @@
+!dist
+src
+*.config.ts
+tsconfig.json
+tsconfig.*.json

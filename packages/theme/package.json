@@ -1,0 +1,49 @@
+{
+  "name": "vitepress-theme-miracle",
+  "version": "2.0.0",
+  "description": "A miraculously smooth VitePress theme",
+  "keywords": [
+    "blog",
+    "blog-theme",
+    "vitepress",
+    "vitepress-theme"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./src/theme/index.tsx"
+    },
+    "./config": {
+      "import": "./src/node/config.ts"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "import": "./dist/theme/index.js",
+        "types": "./dist/theme/index.d.ts"
+      },
+      "./config": {
+        "import": "./dist/node/config.js",
+        "types": "./dist/node/config.d.ts"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsdown"
+  },
+  "devDependencies": {
+    "@tsdown/css": "catalog:",
+    "@types/node": "catalog:",
+    "@vue/tsconfig": "catalog:",
+    "sass-embedded": "catalog:",
+    "tsdown": "catalog:",
+    "vitepress": "catalog:",
+    "vue": "catalog:"
+  },
+  "peerDependencies": {
+    "vitepress": "catalog:",
+    "vue": "catalog:"
+  }
+}
