@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "path": "docs",
+      "problemMatcher": [
+        {
+          "owner": "vitepress-vite",
+          "fileLocation": ["absolute"],
+          "pattern": {
+            "regexp": "^\\s*File:\\s*(.*):(\\d+):(\\d+)$",
+            "file": 1,
+            "line": 2,
+            "column": 3
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "^\\s*vitepress\\s+v",
+            "endsPattern": "^\\s*➜\\s+Local:\\s+https?://"
+          }
+        }
+      ],
+      "label": "npm: dev - docs",
+      "detail": "vitepress dev",
+      "isBackground": true
+    }
+  ]
+}
