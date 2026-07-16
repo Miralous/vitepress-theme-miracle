@@ -2,12 +2,25 @@ import * as fs from 'node:fs'
 import * as path from 'node:path'
 
 import { defineConfig } from 'vitepress'
-import { ThemeConfig } from 'vitepress-theme-miracle'
-import baseConfig from 'vitepress-theme-miracle/config'
+import baseConfig, { ThemeConfig } from 'vitepress-theme-miracle/config'
+
+import themeConfig from './theme.miracle'
 
 export default defineConfig<ThemeConfig>({
   extends: baseConfig,
   srcDir: 'src',
+
+  title: 'title',
+  description: 'Nya',
+  locales: {
+    'zh-hans': {
+      label: '简体中文',
+      lang: 'zh-Hans',
+      title: '标题',
+      description: '描述',
+    },
+  },
+  themeConfig,
 
   // dev options
   vite: {
@@ -20,13 +33,19 @@ export default defineConfig<ThemeConfig>({
             path.resolve(
               __dirname,
               '..',
-              '..',
-              'packages',
-              'theme',
+              'node_modules',
+              'vitepress-theme-miracle',
               'src',
               'theme',
             ),
-            path.resolve(__dirname, '..', '..', 'packages', 'theme', 'src'),
+            path.resolve(
+              __dirname,
+              '..',
+              'node_modules',
+              'vitepress-theme-miracle',
+              'theme',
+              'src',
+            ),
           ]
           const searchPaths = [source, `${source}.ts`, `${source}.tsx`]
 

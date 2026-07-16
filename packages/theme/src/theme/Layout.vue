@@ -1,6 +1,6 @@
 <template>
   <HomePage v-if="HomePageFrontmatter.is(frontmatter)" />
-  <Layout />
+  <Layout v-else />
 </template>
 
 <script lang="ts" setup>

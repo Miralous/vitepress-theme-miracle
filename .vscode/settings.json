@@ -19,5 +19,6 @@
   "editor.formatOnSaveMode": "file",
   "js/ts.experimental.useTsgo": false,
   "npm.scriptRunner": "pnpm",
-  "oxc.fmt.configPath": "./oxfmt.config.ts"
+  "oxc.fmt.configPath": "./oxfmt.config.ts",
+  "editor.tabSize": 2
 }

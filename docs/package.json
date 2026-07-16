@@ -17,6 +17,8 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@tsconfig/node24": "catalog:",
+    "@vue/tsconfig": "catalog:",
     "vitepress": "catalog:",
     "vitepress-theme-miracle": "workspace:*"
   }

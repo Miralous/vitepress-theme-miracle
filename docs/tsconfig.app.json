@@ -1,0 +1,15 @@
+{
+  "extends": "@vue/tsconfig",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "types": ["vitepress/client"]
+  },
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"]
+  },
+  "include": [".vitepress/theme/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
