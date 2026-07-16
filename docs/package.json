@@ -17,7 +17,6 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue-jsx": "catalog:",
     "vitepress": "catalog:",
     "vitepress-theme-miracle": "workspace:*"
   }

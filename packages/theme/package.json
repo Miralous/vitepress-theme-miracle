@@ -12,7 +12,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": "./src/theme/index.tsx"
+      "import": "./src/theme/index.ts"
     },
     "./config": {
       "import": "./src/node/config.ts"
@@ -40,8 +40,10 @@
     "@vue/tsconfig": "catalog:",
     "sass-embedded": "catalog:",
     "tsdown": "catalog:",
+    "unplugin-vue": "catalog:",
     "vitepress": "catalog:",
-    "vue": "catalog:"
+    "vue": "catalog:",
+    "vue-tsc": "catalog:"
   },
   "peerDependencies": {
     "vitepress": "catalog:",

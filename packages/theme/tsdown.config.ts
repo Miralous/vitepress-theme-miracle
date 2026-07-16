@@ -1,4 +1,5 @@
 import { defineConfig } from 'tsdown'
+import Vue from 'unplugin-vue/rolldown'
 
 const minify = false
 
@@ -14,9 +15,11 @@ const common = defineConfig({
 })
 const theme = defineConfig({
   ...common,
-  entry: 'src/theme/index.tsx',
+  entry: 'src/theme/index.ts',
   outDir: 'dist/theme',
   tsconfig: 'tsconfig.app.json',
+  plugins: [Vue({ isProduction: true })],
+  dts: { vue: true },
 })
 const node = defineConfig({
   ...common,

@@ -1,7 +1,6 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 
-import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vitepress'
 import { ThemeConfig } from 'vitepress-theme-miracle'
 import baseConfig from 'vitepress-theme-miracle/config'
@@ -13,7 +12,6 @@ export default defineConfig<ThemeConfig>({
   // dev options
   vite: {
     plugins: [
-      vueJsx(),
       {
         name: 'miracle-dev',
         resolveId(source) {
