@@ -11,7 +11,7 @@ export default defineMiracle({
   title: 'title',
   description: 'Nya',
   locales: {
-    'zh-hans': {
+    zh: {
       label: '简体中文',
       lang: 'zh-Hans',
       title: '标题',
