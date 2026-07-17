@@ -17,7 +17,7 @@ export default defineConfig({
     descriptionTag: true,
     descriptionWithDot: false,
     keepUnparsableExampleIndent: true,
-    lineWrappingStyle: 'greedy',
+    lineWrappingStyle: 'balance',
     preferCodeFences: true,
     separateReturnsFromParam: false,
     separateTagGroups: true,
