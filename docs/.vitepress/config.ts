@@ -1,13 +1,11 @@
 import * as fs from 'node:fs'
 import * as path from 'node:path'
 
-import { defineConfig } from 'vitepress'
-import baseConfig, { ThemeConfig } from 'vitepress-theme-miracle/config'
+import defineMiracle from 'vitepress-theme-miracle/config'
 
 import themeConfig from './theme.miracle'
 
-export default defineConfig<ThemeConfig>({
-  extends: baseConfig,
+export default defineMiracle({
   srcDir: 'src',
 
   title: 'title',

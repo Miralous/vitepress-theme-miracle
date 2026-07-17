@@ -5,3 +5,4 @@ import { Author } from './author'
 export interface ThemeConfig extends DefaultTheme.Config {
   author?: Author
 }
+export interface MiracleConfig {}
