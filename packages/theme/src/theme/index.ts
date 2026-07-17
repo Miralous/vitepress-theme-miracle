@@ -7,4 +7,4 @@ export default {
   extends: DefaultTheme,
   Layout,
 } satisfies Theme
-export type { ThemeConfig } from '#/type'
+export type { ThemeConfig } from '#/types'

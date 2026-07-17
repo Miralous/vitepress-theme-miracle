@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-import type { ThemeConfig } from '../type'
+import type { ThemeConfig } from '../types'
 
 const defaultConfig = defineConfig<ThemeConfig>({
   srcDir: 'docs',
@@ -18,4 +18,4 @@ const defaultConfig = defineConfig<ThemeConfig>({
 })
 
 export default defaultConfig
-export type { ThemeConfig } from '../type'
+export type { ThemeConfig } from '../types'

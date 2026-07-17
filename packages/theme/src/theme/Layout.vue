@@ -8,7 +8,7 @@ import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 
 import HomePage from '#/layouts/HomePage.vue'
-import type { ThemeConfig } from '#/type'
+import type { ThemeConfig } from '#/types'
 import { HomePageFrontmatter } from '#/utils/frontmatter'
 
 const Layout = DefaultTheme.Layout

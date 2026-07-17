@@ -13,6 +13,6 @@
   "vueCompilerOptions": {
     "vitePressExtensions": [".md"]
   },
-  "include": ["src/*.ts", "src/theme/**/*"],
+  "include": ["src/types/**/*", "src/theme/**/*"],
   "exclude": ["node_modules", "dist"]
 }
