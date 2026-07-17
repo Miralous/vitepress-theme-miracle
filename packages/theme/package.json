@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@tsdown/css": "catalog:",
+    "@types/markdown-it": "catalog:",
     "@types/node": "catalog:",
     "@vue/tsconfig": "catalog:",
     "sass-embedded": "catalog:",
@@ -48,5 +49,9 @@
   "peerDependencies": {
     "vitepress": "catalog:",
     "vue": "catalog:"
+  },
+  "optionalDependencies": {
+    "@mdit/plugin-katex": "catalog:",
+    "@mdit/plugin-mathjax": "catalog:"
   }
 }

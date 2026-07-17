@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import type { MiracleConfig, ThemeConfig } from '../types'
+import { configMath } from './math'
 
 type UserConfig = Parameters<typeof defineConfig<ThemeConfig>>[0]
 export interface MiracleUserConfig extends UserConfig {
@@ -8,6 +9,7 @@ export interface MiracleUserConfig extends UserConfig {
 }
 
 const defineMiracle = (config: MiracleUserConfig) => {
+  const { miracle } = config
   delete config.miracle
   return defineConfig<ThemeConfig>({
     srcDir: 'docs',
@@ -22,6 +24,11 @@ const defineMiracle = (config: MiracleUserConfig) => {
     mpa: false,
     metaChunk: true,
     cleanUrls: true,
+    markdown: {
+      async config(md) {
+        configMath(md, miracle)
+      },
+    },
     ...config,
   })
 }

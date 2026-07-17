@@ -6,9 +6,12 @@ allowBuilds:
   esbuild: true
 catalogMode: strict
 catalog:
+  '@mdit/plugin-katex': ^1.0.1
+  '@mdit/plugin-mathjax': ^1.1.0
   '@microsoft/api-extractor': ^7.58.9
   '@tsconfig/node24': ^24.0.4
   '@tsdown/css': ^0.22.7
+  '@types/markdown-it': ^14.1.2
   '@types/node': ^26.1.1
   '@vue/tsconfig': ^0.9.1
   husky: ^9.1.7
