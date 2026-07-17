@@ -1,5 +1,5 @@
 <template>
-  <HomePage v-if="frontmatter.layout === 'home'" />
+  <HomeLayout v-if="frontmatter.layout === 'home'" />
   <Layout v-else />
 </template>
 
@@ -8,9 +8,9 @@ import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import type { Ref } from 'vue'
 
-import HomePage from '#/layouts/HomePage.vue'
+import HomeLayout from '#/layouts/HomeLayout.vue'
 import type { ThemeConfig } from '#/types'
-import type { Frontmatter } from '#/utils/frontmatter/'
+import type { Frontmatter } from '#/utils/frontmatter'
 
 const Layout = DefaultTheme.Layout
 const data = useData<ThemeConfig>()
