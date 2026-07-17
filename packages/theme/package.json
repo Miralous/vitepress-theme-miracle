@@ -51,7 +51,9 @@
     "vue": "catalog:"
   },
   "optionalDependencies": {
+    "@giscus/vue": "catalog:",
     "@mdit/plugin-katex": "catalog:",
-    "@mdit/plugin-mathjax": "catalog:"
+    "@mdit/plugin-mathjax": "catalog:",
+    "twikoo": "catalog:"
   }
 }

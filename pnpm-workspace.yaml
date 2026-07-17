@@ -6,6 +6,7 @@ allowBuilds:
   esbuild: true
 catalogMode: strict
 catalog:
+  '@giscus/vue': ^3.1.1
   '@mdit/plugin-katex': ^1.0.1
   '@mdit/plugin-mathjax': ^1.1.0
   '@microsoft/api-extractor': ^7.58.9
@@ -19,6 +20,7 @@ catalog:
   oxlint: ^1.74.0
   sass-embedded: ^1.100.0
   tsdown: ^0.22.7
+  twikoo: ^1.7.14
   typescript: ^6
   unplugin-vue: ^7.2.0
   vitepress: 2.0.0-alpha.18
