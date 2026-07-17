@@ -12,6 +12,8 @@ import HomeLayout from '#/layouts/HomeLayout.vue'
 import type { ThemeConfig } from '#/types'
 import type { Frontmatter } from '#/utils/frontmatter'
 
+import '#/style.scss'
+
 const Layout = DefaultTheme.Layout
 const data = useData<ThemeConfig>()
 const frontmatter = data.frontmatter as Ref<Frontmatter>
