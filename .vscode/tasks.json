@@ -25,6 +25,16 @@
       "label": "npm: dev - docs",
       "detail": "vitepress dev",
       "isBackground": true
+    },
+    {
+      "type": "npm",
+      "script": "install",
+      "problemMatcher": [],
+      "label": "npm: install",
+      "detail": "install dependencies from package",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
     }
   ]
 }
