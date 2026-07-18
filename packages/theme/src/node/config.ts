@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 import type { MiracleConfig, ThemeConfig } from '../types'
-import { configMath } from './math'
+import { configMath } from './math.ts'
 
 type UserConfig = Parameters<typeof defineConfig<ThemeConfig>>[0]
 export interface MiracleUserConfig extends UserConfig {

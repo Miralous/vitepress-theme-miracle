@@ -1,6 +1,6 @@
-import { UserConfig } from 'vitepress'
+import type { UserConfig } from 'vitepress'
 
-import { MiracleConfig } from './config'
+import type { MiracleConfig } from '../types'
 
 export const configMath = async (
   md: Parameters<Required<Required<UserConfig>['markdown']>['config']>[0],
