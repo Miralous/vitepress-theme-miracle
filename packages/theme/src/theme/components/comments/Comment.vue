@@ -1,5 +1,5 @@
 <template>
-  <h2 class="miracle-comment-styled-h2"> 评论 </h2>
+  <h2 class="miracle-comment-styled-h2" v-if="title !== false"> 评论 </h2>
   <Giscus v-if="type === 'giscus'" />
   <Twikoo v-else-if="type === 'twikoo'" />
 </template>
@@ -10,6 +10,7 @@ import Twikoo from '#/components/comments/Twikoo.vue'
 
 defineProps<{
   type: 'giscus' | 'twikoo'
+  title?: boolean
 }>()
 </script>
 

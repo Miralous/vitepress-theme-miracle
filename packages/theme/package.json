@@ -56,7 +56,6 @@
   "optionalDependencies": {
     "@giscus/vue": "catalog:",
     "@mdit/plugin-katex": "catalog:",
-    "@mdit/plugin-mathjax": "catalog:",
-    "twikoo": "catalog:"
+    "@mdit/plugin-mathjax": "catalog:"
   }
 }
