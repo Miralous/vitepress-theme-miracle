@@ -1,4 +1,4 @@
-import { KatexMathProvider } from './katex'
-import { MathjaxMathProvider } from './mathjsx'
+import type { KatexMathProvider } from './katex'
+import type { MathjaxMathProvider } from './mathjsx'
 
 export type MathProvider = KatexMathProvider | MathjaxMathProvider

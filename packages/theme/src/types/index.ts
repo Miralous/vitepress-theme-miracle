@@ -1,8 +1,8 @@
 import { DefaultTheme } from 'vitepress/theme'
 
-import { Author } from './author'
-import { CommentProvider } from './comments'
-import { MathProvider } from './math'
+import type { Author } from './author'
+import type { CommentProvider } from './comments'
+import type { MathProvider } from './math'
 
 export interface ThemeConfig extends DefaultTheme.Config {
   author?: Author
