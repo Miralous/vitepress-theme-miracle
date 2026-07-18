@@ -131,13 +131,12 @@ const frontmatter = page.value?.frontmatter || {}
   display: flex;
   align-items: center;
   gap: 6px;
-}
 
-/* 重置 Icon 的背景和大小，使其变得极简 */
-.meta-item .icon {
-  width: 16px;
-  height: 16px;
-  opacity: 0.8;
+  & .icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+  }
 }
 
 .hover-link {
