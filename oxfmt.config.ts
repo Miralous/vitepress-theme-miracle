@@ -1,3 +1,4 @@
+import * as process from 'node:process'
 import { defineConfig } from 'oxfmt'
 
 export default defineConfig({
@@ -30,7 +31,30 @@ export default defineConfig({
   semi: false,
   singleAttributePerLine: false,
   singleQuote: true,
-  sortImports: {},
+  sortImports: {
+    customGroups: [
+      {
+        elementNamePattern: ['vue', 'vue-**'],
+        groupName: 'vue-libs',
+      },
+      {
+        elementNamePattern: ['vitepress', 'vitepress-**'],
+        groupName: 'vitepress-libs',
+      },
+    ],
+    groups: [
+      'type-import',
+      'vue-libs',
+      'vitepress-libs',
+      ['value-builtin', 'value-external'],
+      'type-internal',
+      'value-internal',
+      ['type-parent', 'type-sibling', 'type-index'],
+      ['value-parent', 'value-sibling', 'value-index'],
+      'unknown',
+    ],
+    newlinesBetween: false,
+  },
   sortPackageJson: {
     sortScripts: true,
   },
