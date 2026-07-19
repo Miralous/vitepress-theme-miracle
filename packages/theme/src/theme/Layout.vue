@@ -1,6 +1,7 @@
 <template>
   <HomeLayout v-if="frontmatter.layout === 'home'" />
-  <PostLayout v-else-if="frontmatter.layout === 'doc'" />
+  <PostLayout
+    v-else-if="frontmatter.layout === 'doc' || frontmatter.layout === 'post'" />
   <Layout v-else />
 </template>
 

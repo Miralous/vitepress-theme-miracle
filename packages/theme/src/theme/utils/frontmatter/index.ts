@@ -8,15 +8,16 @@ export interface FrontmatterBase {
   layout: string
 }
 
-export interface DocFrontmatter extends FrontmatterBase, VanillaDocFrontmatter {
-  layout: 'doc'
+export interface DocFrontmatter
+  extends FrontmatterBase, Omit<VanillaDocFrontmatter, 'layout'> {
+  layout: 'doc' | 'post'
 }
 export interface HomeFrontmatter
-  extends FrontmatterBase, VanillaHomeFrontmatter {
+  extends FrontmatterBase, Omit<VanillaHomeFrontmatter, 'layout'> {
   layout: 'home'
 }
 export interface PageFrontmatter
-  extends FrontmatterBase, VanillaPageFrontmatter {
+  extends FrontmatterBase, Omit<VanillaPageFrontmatter, 'layout'> {
   layout: 'page'
 }
 export interface DemoFrontmatter extends FrontmatterBase {
